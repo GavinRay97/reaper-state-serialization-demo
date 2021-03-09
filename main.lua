@@ -1,4 +1,6 @@
 -- Load json file from "./utils.json"
+-- UNCOMMMENT FOR REAPER
+-- package.path = package.path .. ";" .. string.match(({reaper.get_action_context()})[2], "(.-)([^\\/]-%.?([^%.\\/]*))$") .. "?.lua"
 local json = require("utils.json")
 
 -- Shorthand way for declaring types. Much easier, but no comments available for fields.
